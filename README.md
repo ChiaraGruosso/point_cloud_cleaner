@@ -1,5 +1,8 @@
 # Point cloud cleaner
 Quando si raccolgono dati dai dispositivi di scansione, la point cloud risultante tende a contenere rumore e artefatti che si vorrebbero rimuovere, cioè che non fanno parte dell'oggetto preso in considerazione. Nel caso di presenza massiva di outlier e punti estranei all'oggetto, la generazione della mesh a partire dalla point cloud potrebbe risultare imprecisa rispetto all'oggetto nella realtà. Quindi vanno effettuate delle operazioni di pulizia affinché la point cloud, e successivamente anche la mesh, rispecchino il più possibile l'oggetto preso in considerazione.
+
+In questa repository sono presenti diversi esempi di pulizia della point cloud. Si parte da una point cloud sporca che successivamente viene ripulita eliminando tutti i punti che non fanno parte dell'oggetto considerato. Al termine di queste operazioni, se la point cloud contiene delle zone vuote, vengono effettuate delle operazioni di ricostruzione per rendere il più fedele possibile la point cloud all'oggetto originale. Infine viene effettuato il calcolo della stima dell'errore.
+
 ## Requisiti
 - Python 3
 - NumPy
